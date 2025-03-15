@@ -1,5 +1,3 @@
-#![feature(pointer_byte_offsets)]
-
 use std::f32::consts::PI;
 
 use embree4_rs::{

@@ -1,8 +1,10 @@
 mod tri_mesh;
 mod user;
+mod sphere;
 
 pub use tri_mesh::*;
 pub use user::*;
+pub use sphere::*;
 
 /// A trait implemented by all geometry types.
 /// If you want to implement your own geometry type, you must implement this trait.
