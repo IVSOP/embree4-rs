@@ -105,7 +105,7 @@ impl<'a> Scene<'a> {
     /// let scene = Scene::try_new(&device, options).unwrap();
     /// let scene = scene.commit().unwrap();
     /// ```
-    pub fn commit(&self) -> Result<CommittedScene> {
+    pub fn commit(&'a self) -> Result<CommittedScene<'a>> {
         unsafe {
             embree4_sys::rtcCommitScene(self.handle);
         }
